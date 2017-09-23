@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Stache</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="css/noty.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+</head>
+<body>
+	<header>
+		<div class="icons" id="logo">
+			<a href="index.html">
+				<img src="assets/logo.png">
+			</a>
+		</div>
+		
+		<nav>
+			<img class="icons" id="listIcon" src="assets/mobileList.png">
+			<img class="icons" id="mapIcon" src="assets/mobileMap.png">
+			<img class="icons" id="filterIcon" src="assets/mobileFilter.png">
+			<div id="desktopNav">
+					<li>
+						<a class="activeLink" href="#">
+							Search Spaces
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Bookings
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Favorites
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Message
+						</a>
+					</li>
+					<a href="#">
+						<img id="userProfile" src="assets/userProfile.png">
+					</a>
+			</div>
+		</nav>
+	</header>
+
+	<div class="views mapView">
+		<div id="map">
+		</div>
+		
+	</div>
+
+	<div class="views filterView">
+		<div class='filterHeader'>
+			<img id="backIcon" src="assets/backIcon.png">
+		</div>
+		<div class="filterSpace">
+			<P id="filterName">
+				FILTERS
+			</P>
+			<p id="resetName">
+				RESET
+			</p>
+			<div class="space">
+				<p class="filterTitle">
+					Space
+				</p>
+				<div class="filterDropDownOptions">
+					<img class="filterIcon" src="assets/basementIcon.png">
+					<p style="margin-top: 6px" class="spaceText">
+						Basement
+					</p>
+					<img class="filterdropdownButton" src="assets/mobileDropDown.png">
+				</div>
+				<div class="radioButton">
+					
+				</div>
+				<p id="spaceOption">
+					Shared space
+				</p>
+
+			</div>
+
+			<div class="date">
+				<p class="filterTitle">
+					Date
+				</p>
+
+				<div id="sinceDate">
+					<p class="dateTime">
+						Since
+					</p>
+					<img class="filterdropdownButton" src="assets/mobileDropDown.png">
+					<p class="dateCalendar">
+						DD/MM/YYY
+					</p>
+				</div>
+				<div id=untilDate>
+					<p class="dateTime">
+						Until
+					</p>
+					<img class="filterdropdownButton" src="assets/mobileDropDown.png">
+					<p class="dateCalendar">
+						DD/MM/YYY
+					</p>
+				</div>
+
+			</div>
+
+			<div class="features">
+				<p class="filterTitle">
+					Features
+				</p>
+				<div class="radioOptionSpace">
+					<div class="radioButton">
+						<div class="selectedRadioButton">
+							
+						</div>
+					</div>
+					<p style="color: black" id="spaceOption">
+						24 hr Access
+					</p>
+				</div>
+				<div class="radioOptionSpace">
+					<div class="radioButton">
+						
+					</div>
+					<p id="spaceOption">
+						Climated Controlled
+					</p>
+				</div>
+
+			</div>
+
+			<div class="price">
+				<p class="filterTitle">
+					Price
+				</p>
+
+				<div class="filterDropDownOptions">
+					<img class="filterdropdownButton" src="assets/mobileDropDown.png">
+					<p id="filterPrice">
+						$1000 to $2000 / month
+					</p>
+				</div>
+			</div>
+
+			<div class="mobileApply" id="applyButton">
+				<p>
+					APPLY
+				</p>
+			</div>
+
+			<div class="desktopApply" id="applyButton">
+				<p>
+					APPLY
+				</p>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="blurBackground">
+			
+	</div>
+
+	<div class="views listView">
+		<div class="listsearch">
+			<div class="dropdownMenu" id="spaceSize">
+				<div class="sizeIcon">
+					<img class="selectedSizeIcon" src="assets/mobileSIcon.png">
+				</div>
+
+				<div class="sizeText">
+					<p id="selectedOption">Small (sq ft )</p>
+				</div>
+				
+				<img class="dropdownButton" src="assets/mobileDropDown.png">
+			</div>
+
+			<div class="dropdownOptions">
+				<div class="options" id="option1">
+					<div class="sizeIcon desktopIcons">
+						<div class="tinyIcon">
+							
+						</div>
+					</div>
+
+					<div class="optionText">
+						<p id="optionText1">Tiny (25 sq ft)</p>
+					</div>
+					
+				</div>
+				<div class="options activeOption" id="option2">
+					<div class="sizeIcon desktopIcons">
+						<div class="smallIcon">
+							
+						</div>
+					</div>
+
+					<div class="optionText">
+						<p id="optionText2">Small (50 sq ft)</p>
+					</div>
+					
+				</div>
+
+				<div class="options" id="option3">
+					<div class="sizeIcon desktopIcons">
+						<div class="mediumIcon">
+							
+						</div>
+					</div>
+
+					<div class="optionText">
+						<p id="optionText3">Medium (100 sq ft)</p>
+					</div>
+				</div>
+
+				<div class="options" id="option4">
+					<div class="sizeIcon desktopIcons">
+						<div class="largeIcon">
+							
+						</div>
+					</div>
+
+					<div class="optionText">
+						<p id="optionText4">Large (300 sq ft)</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="filterArrow">
+				<img src="assets/forwardIcon.png">
+			</div>
+
+			<div class="dropdownMenu" id="location">
+				<p class="locationText">
+					<img id="locationIcon" src="assets/locationIcon.png">
+					Arizona, United States
+				</p>
+				<div>
+					<img id="locationIconDesktop" src="assets/locationIcon.png">
+					<p class="locationInput">
+						Location
+					</p>
+				</div>
+				<img class="dropdownButton" src="assets/mobileDropDown.png">
+			</div>
+
+			<div class="desktopFilter">
+				<p>
+					FILTERS
+				</p>
+			</div>
+		</div>
+		
+		<div class="listings">
+			<div class="leftSide">
+				<div class="listing">
+					<img class="listingIcon" src="assets/garageIcon.png">
+					<p class="listingTitle">
+						GARAGE 1
+					</p>
+					<img class="listingPhoto" src="assets/garage1Picture.png">
+					<p class="listingSize">
+						Medium Garage (100 sq ft)
+					</p>
+					<p class="listingPrice">
+						$166.50 <p class="listingTime">/month</p>
+					</p>
+					
+					<!-- <img class="listingRates" src="assets/ratings.png"> -->
+					<img class="listingRates" src="assets/ratings1.png">
+					<p class="listingRatesText">
+						(10 ratings)
+					</p>
+				</div>
+
+				<div class="listing">
+					<img class="listingIcon" src="assets/basementIcon.png">
+					<p class="listingTitle">
+						BASEMENT
+					</p>
+					<img class="listingPhoto" src="assets/basementPicture.png">
+					<p class="listingSize">
+						Medium Basement (100 sq ft)
+					</p>
+					<p class="listingPrice">
+						$290.20 <p class="listingTime">/month</p>
+					</p>
+					<img class="listingRates" src="assets/ratings1.png">
+					<p class="listingRatesText">
+						(10 ratings)
+					</p>
+				</div>
+			</div>
+			
+			<div class="rightSide">
+				<div class="listing">
+					<img class="listingIcon" src="assets/carIcon.png">
+					<p class="listingTitle">
+						PARKING 1
+					</p>
+					<img class="listingPhoto" src="assets/parking1Picture.png">
+					<p class="listingSize">
+						Medium Parking (100 sq ft)
+					</p>
+					<p class="listingPrice">
+						$33.50 <p class="listingTime">/month</p>
+					</p>
+					<img class="listingRates" src="assets/5starRating.png">
+					<p class="listingRatesText">
+						(10 ratings)
+					</p>
+				</div>
+
+				<div style="margin-bottom: 40px" class="listing">
+					<img class="listingIcon" src="assets/houseIcon.png">
+					<p class="listingTitle">
+						SNAP BEDROOM BEDROOM...
+					</p>
+					<img class="listingPhoto" src="assets/snapbasementPicture.png">
+					<p class="listingSize">
+						Small Bedroom (100 sq ft)
+					</p>
+					<p class="listingPrice">
+						$78.50 <p class="listingTime">/month</p>
+					</p>
+					<img class="listingRates" src="assets/ratings1.png">
+					<p class="listingRatesText">
+						(10 ratings)
+					</p>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDr3vgCORyRzlgC9IkoPiiV0GKhWExjmcY&callback=initMap">
+    </script>
+    <script src="js/noty.js" type="text/javascript"></script>
+</body>
+</html>
